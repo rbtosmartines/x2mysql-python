@@ -1,0 +1,5 @@
+db_host = "localhost"
+db_port = "3306"
+db_user = "x2mysql"
+db_password = "x2mysql"
+db_database = "x2mysql"

@@ -1,7 +1,7 @@
 x2mysql-python
 ==============
 
-O aplicativo transforma planilhas em tabelas MySQL, usando o nome do arquivo e da planilha para nome da tabela e os textos da primeira linha da planilha como colunas da tabela.
+O aplicativo transforma planilhas em tabelas MySQL / MariaDB, usando o nome do arquivo e da planilha para nome da tabela e os textos da primeira linha da planilha como colunas da tabela.
 
 Desenvolvido com:
 - python 3.9.6

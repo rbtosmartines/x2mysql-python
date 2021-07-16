@@ -4,7 +4,11 @@ from sqlalchemy import create_engine, types
 
 from tkinter import filedialog
 
-engine = create_engine('mysql+pymysql://root:beta2020@localhost:3308/x2mysql') # enter your password and database names here
+import config as cf
+
+connstr = "mysql+pymysql://" + cf.db_user + ":" + cf.db_password + "@" + cf.db_host + ":" + cf.db_port + "/" + cf.db_database
+
+engine = create_engine(connstr)
 
 def nomarq (xyz):
     for filename in xyz:

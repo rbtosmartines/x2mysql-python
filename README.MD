@@ -7,7 +7,8 @@ Desenvolvido com:
 - python 3.9.6
 - pandas 1.3.0
 - SQLAlchemy 1.4.20
-- tkinter
+- PyMySQL 1.0.2
+- tkinter 0.1.0
  
 Como usar:
 - Crie uma base de dados.

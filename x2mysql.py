@@ -1,5 +1,7 @@
 from tkinter import *
 
+from datetime import datetime
+
 import os
 
 def donothing():
@@ -9,6 +11,9 @@ def donothing():
 
 def verConfig(root):
     os.system("x2mysql1.py")
+
+def verResult(root):
+    os.system("x2mysqlr.py")
 
 def mudarConfig(root):
     os.system("x2mysql2.py")
@@ -26,6 +31,13 @@ def xlsx(root):
     os.system("x2mysql_xlsx.py")
    
 root = Tk()
+
+rsl = open('result.txt', 'w')
+dthr = datetime.now()
+dthr2 = dthr.strftime("%d/%m/%Y %H:%M")
+#print(dthr2)
+rsl.write('Resultado ' + dthr2 + '\n')
+rsl.close()
 
 root.geometry('300x200')
 
@@ -45,7 +57,7 @@ editmenu.add_command(label="xlsx", command=lambda root=root:xlsx(root))
 menubar.add_cascade(label="Planilha", menu=editmenu)
 
 resultmenu = Menu(menubar, tearoff=0)
-resultmenu.add_command(label="Ver", command=donothing)
+resultmenu.add_command(label="Ver",  command=lambda root=root:verResult(root))
 menubar.add_cascade(label="Resultado", menu=resultmenu)
 
 helpmenu = Menu(menubar, tearoff=0)

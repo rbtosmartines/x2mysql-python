@@ -13,10 +13,10 @@ def verConfig(root):
     os.system("aux1.py")
 
 def verResult(root):
-    os.system("x2mysqlr.py")
+    os.system("auxr.py")
 
 def mudarConfig(root):
-    os.system("x2mysql2.py")
+    os.system("aux2.py")
 
 def csv(root):
     os.system("x2mysql_csv.py")
@@ -34,7 +34,7 @@ root = Tk()
 
 root.title("EXCEL TO MySQL - MariaDB")
 root.iconbitmap('ssii.ico')
-root.geometry('300x200')
+root.geometry('350x200')
 
 rsl = open('result.txt', 'w')
 dthr = datetime.now()

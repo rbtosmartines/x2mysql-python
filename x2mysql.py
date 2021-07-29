@@ -29,6 +29,9 @@ def xls(root):
 
 def xlsx(root):
     os.system("x2mysql_xlsx.py")
+
+def sobre(root):
+    os.system("sobre.py")
    
 root = Tk()
 
@@ -64,7 +67,7 @@ menubar.add_cascade(label="Resultado", menu=resultmenu)
 
 helpmenu = Menu(menubar, tearoff=0)
 helpmenu.add_command(label="Index", command=donothing)
-helpmenu.add_command(label="Sobre...", command=donothing)
+helpmenu.add_command(label="Sobre...", command=lambda root=root:sobre(root))
 menubar.add_cascade(label="Ajuda", menu=helpmenu)
 
 root.config(menu=menubar)
